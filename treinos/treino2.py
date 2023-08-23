@@ -43,15 +43,15 @@ menos escreva "Seu nome é curto"; se tiver entre 5 e 6 letras, escreva
 "Seu nome é normal"; maior que 6 escreva "Seu nome é muito grande". 
 """
 
-nome = input('Digite seu nome <<< ')
-tamanho_do_nome = len(nome)
+# nome = input('Digite seu nome <<< ')
+# tamanho_do_nome = len(nome)
 
-if tamanho_do_nome >= 1:
-    if tamanho_do_nome <= 4:
-        print('CURTO')
-    elif tamanho_do_nome >= 5 and tamanho_do_nome <=6:
-        print('NORMAL')
-    else:
-        print('GRANDE')
-else:
-    print('Digite no minimo uma letra')
+# if tamanho_do_nome >= 1:
+#     if tamanho_do_nome <= 4:
+#         print('CURTO')
+#     elif tamanho_do_nome >= 5 and tamanho_do_nome <= 6:
+#         print('NORMAL')
+#     else:
+#         print('GRANDE')
+# else:
+#     print('Digite no minimo uma letra')
