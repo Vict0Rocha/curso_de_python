@@ -1,5 +1,4 @@
 while True:
-    
     n1 = input('Digite o PRIMEIRO valor <<< ')
     n2 = input('Digite o SEGUNDO valor <<< ')
     operado = input('Digite o OPERADOR (+-*/) <<< ')
@@ -14,19 +13,16 @@ while True:
 
     if valores_validos is None:
         print('Um ou mais OPERADORES estão INCORRETOS!')
-        continue #Para voltar ao inicio do código
-        
+        continue #Para voltar ao inicio do código      
     operadores_permitidos = '+-*/'
 
     if operado not in operadores_permitidos:
         print('Operador inválido.')
-        continue
-        
+        continue     
     if len(operado) > 1:
         print('Digite apenas um operador.')
         continue
 
-    sair = input('Você deseja [S]air? <<< ').lower().startswith('s') # islower é para deixar tudo minusculo, startswhith é para verificar a primeira letra
-
+    sair = input('Você deseja [S]air? <<< ').lower().startswith('s') # islower é para deixar tudo minusculo, startswhith é para verificar a primeira letra 
     if sair is True:
         break
