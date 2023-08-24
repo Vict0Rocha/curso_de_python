@@ -14,3 +14,13 @@ while condicao:
         break
 
 print('Acabou')
+
+"""
+Operadores de atribuição
+= += -= *= /= //= **= %=
+"""
+
+contador = 10
+
+contador /= 5
+print(contador)
