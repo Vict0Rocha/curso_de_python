@@ -25,6 +25,6 @@ contador = 0
 
 while contador < tamanho_nome:
     nova_str = nome[contador]
-    print(nova_str, end='*')
+    print(nova_str, end='-')
     contador += 1
 
