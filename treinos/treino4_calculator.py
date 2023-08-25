@@ -2,13 +2,14 @@ while True:
     n1 = input('Digite o PRIMEIRO valor <<< ')
     n2 = input('Digite o SEGUNDO valor <<< ')
     operador = input('Digite o OPERADOR (+-*/) <<< ')
+
     valores_validos = None #None quer dizer, vazio
     n1_float = 0
     n2_float = 0
 
     try:
         n1_float = float(n1)
-        n2_float = float(n1)
+        n2_float = float(n2)
         valores_validos = True
 
     except:
@@ -27,14 +28,15 @@ while True:
         print('Digite apenas um operador.')
         continue
      
+    print('Segue abaixo o resultado, confira!')
     if operador == '+':
-        print(n1_float+n2_float)
+        print(n1_float + n2_float)
     elif operador == '-':
-        print(n1_float-n2_float)
+        print(n1_float - n2_float)
     elif operador == '*':
-        print(n1_float*n2_float)
+        print(n1_float * n2_float)
     elif operador == '/':
-        print(n1_float/n2_float)
+        print(n1_float / n2_float)
     else:
         print('Nunca deveria chegar aqui!')
 
