@@ -22,15 +22,15 @@ descrito, exiba a saudação apropriada. Ex.
 Bom dia 0-11, Boa tarde 12-17 e Boa noite 18-23.
 """
 
-horario = input('Digite o horario do seu relogio: ')
+hora = input('Digite o horario do seu relogio: ')
 
 try:
-    horario = float(horario)
-    if horario >= 0 and horario <= 11:
+    hora = float(hora)
+    if hora >= 0 and hora <= 11:
         print('BOM DIA')
-    elif horario >= 12 and horario <= 17:
+    elif hora >= 12 and hora <= 17:
         print('BOA TARDE')
-    elif horario >= 18 and horario <=23:
+    elif hora >= 18 and hora <=23:
         print('BOA NOITE')
     else:
         print('Horario invalido')
