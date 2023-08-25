@@ -38,7 +38,7 @@ while True:
     elif operador == '/':
         print(n1_float / n2_float)
     else:
-        print('Nunca deveria chegar aqui!')
+        print('NUNCA deveria chegar aqui!')
 
     sair = input('Você deseja [S]air? <<< ').lower().startswith('s') # islower é para deixar tudo minusculo, startswhith é para verificar a primeira letra 
     if sair is True:
