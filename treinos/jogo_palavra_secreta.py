@@ -15,6 +15,8 @@ while palpite != palavra_secreta:
         print('Digite apenas uma letra!')
         continue
 
+    palpite = palpite.upper()
+    print(palpite)
     # for i in palavra_secreta:
     #     if palpite == i:
     #         print('ok')
