@@ -13,9 +13,11 @@ Criar, ler, alterar, apagar = lista[i] (CRUD)
 #        0   1   2   3
 lista = [10, 20, 30, 40]
 lista.append('Luiz')
-nome = lista.pop()
-lista.append(1233)
-del lista[-1]
+nome = lista.pop() #Removendo ultimo indice 
+lista.append(1233) #Adicionando o ultimo indice
+print(lista)
+del lista[-5] #Deletando indice desejado
+print(lista)
 # lista.clear()
 lista.insert(100, 5)
 print(lista[4])
