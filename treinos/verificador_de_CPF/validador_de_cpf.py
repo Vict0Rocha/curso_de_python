@@ -42,6 +42,7 @@ digito_2 = resultado_2 if resultado_2 <= 9 else 0
 cpf_sistema = f'{cpf_9_digito}{digito_1}{digito_2}'
 # print(cpf_sistema)
 print(cpf_sistema)
+
 if cpf_usuario == cpf_sistema:
     print(f'O {cpf_usuario} é VALIDO')
 else:
