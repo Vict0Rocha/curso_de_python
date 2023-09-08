@@ -1,4 +1,20 @@
-cpf_usuario = '74682489070'
+import re
+import sys
+
+# cpf_usuario = '74682489070'
+entrada_cpf = input('Digite o CPF: ')
+cpf_usuario = re.sub(
+    r'[^0-9]', # Pagando tudo que não é número 
+    '', # Substituindo por nada 
+    entrada_cpf # Passando o valor
+)
+
+entrada_sequencial = entrada_cpf == entrada_cpf[0] * len(entrada_cpf)
+
+if entrada_sequencial:
+    print('Você envio somente valores repetidos')
+    sys.exit()
+
 cpf_9_digito = cpf_usuario[:9] # Fazendo um fatiamento, pagando somente os 9 primeiros digitos
 contagem_1 = 10
 resultado_1 = 0
@@ -25,7 +41,7 @@ digito_2 = resultado_2 if resultado_2 <= 9 else 0
 
 cpf_sistema = f'{cpf_9_digito}{digito_1}{digito_2}'
 # print(cpf_sistema)
-
+print(cpf_sistema)
 if cpf_usuario == cpf_sistema:
     print(f'O {cpf_usuario} é VALIDO')
 else:
