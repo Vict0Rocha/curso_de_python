@@ -12,7 +12,7 @@ cpf_usuario = re.sub(
 entrada_sequencial = entrada_cpf == entrada_cpf[0] * len(entrada_cpf)
 
 if entrada_sequencial:
-    print('Você envio somente valores repetidos')
+    print('[ERRO] Você digitou somente itens repetidos!')
     sys.exit()
 
 cpf_9_digito = cpf_usuario[:9] # Fazendo um fatiamento, pagando somente os 9 primeiros digitos
