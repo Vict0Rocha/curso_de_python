@@ -32,7 +32,7 @@ resultado = 0
 
 for digito in cpf_digitos:
     resultado += int(digito)*contagem
-    contagem = contagem - 1
+    contagem -= 1
 
 resultado = resultado*10 % 11
 print(resultado if resultado <= 9 else 0)
