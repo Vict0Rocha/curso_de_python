@@ -23,3 +23,17 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
+
+cpf = '14382270006'
+cpf_9_digito = cpf[:9] # Fazendo um fatiamento, pagando somente os 9 primeiros digitos
+# cpf_9_digito = int(cpf_9_digito)
+
+contagem = 10
+resultado = 0
+
+for digito in cpf_9_digito:
+    resultado += int(digito)*contagem #Multiplicando digito por digito e já somando os resultos
+    contagem = contagem - 1
+
+resultado = (resultado * 10) % 11 #Multiplicando o resultado por 10 e pegando o resto da divisão por 11
+print(resultado if resultado <= 9 else 0) # Caso o resultado seja maior que 9, o valor do primeiro digito deve valer 0
