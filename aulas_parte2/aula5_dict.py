@@ -27,7 +27,7 @@ print(pessoa['idade'])
 
 # for chave, valor in pessoa.items():
 #     print(chave, valor)
-print(10*'-')
+print(20*'-')
 
 import copy
 
