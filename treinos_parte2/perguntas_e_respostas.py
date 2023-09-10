@@ -25,5 +25,4 @@ for pergunta in perguntas_e_repostas: #Percorrendo toda a lista de pergunta e re
     opcoes = pergunta['Opções']
     for i, opcoes in enumerate(opcoes):
         print(f'{i}) {opcoes}')
-    print(' ')
-    
+    print('')
