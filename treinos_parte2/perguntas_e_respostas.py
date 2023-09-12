@@ -1,3 +1,4 @@
+import os
 
 # Criando um lista que recebe varios dicionarios
 perguntas_e_repostas = [
@@ -42,6 +43,7 @@ for pergunta in perguntas_e_repostas: #Percorrendo toda a lista de pergunta e re
                 acerto = True
     
     print()
+    os.system('cls')
     if acerto:
         qtd_acertos += 1
         print('Acertou ✅ ')
