@@ -7,7 +7,7 @@ Esse repositório é para um curso de python, contendo do básico ao avançado.
 - Dados primitivos
 - Tratamento de dados com strigs
 - For; While, If
-- Listas
+- List, dict e set
 - Empacotamento e desempacotamento
 - O peração ternária
 - Funções
