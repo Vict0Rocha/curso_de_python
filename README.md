@@ -16,5 +16,5 @@ Esse repositório é para um curso de python, contendo do básico ao avançado.
 
 - Verificador e gerador de CPF válido
 - Jogo de adivinhe a palavra - modelo jogo da forca
-- Contador de letras. 
+- Contador de letras.   
  
