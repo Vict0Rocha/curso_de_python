@@ -4,16 +4,15 @@
 # que contém apenas uma linha. Ou seja, tudo
 # deve ser contido dentro de uma única
 # expressão.
-# lista = [
-#     {'nome': 'Luiz', 'sobrenome': 'miranda'},
-#     {'nome': 'Maria', 'sobrenome': 'Oliveira'},
-#     {'nome': 'Daniel', 'sobrenome': 'Silva'},
-#     {'nome': 'Eduardo', 'sobrenome': 'Moreira'},
-#     {'nome': 'Aline', 'sobrenome': 'Souza'},
-# ]
-# lista = [4, 32, 1, 34, 5, 6, 6, 21, ]
-# lista.sort(reverse=True)
-# sorted(lista)
+
+'''
+Para usarmos a função lambda é recumendado criar
+uma função que executa ela. 
+'''
+
+# Função lambda não tem 'nome', é uma função anonima 
+# Não precisa de parentece
+# Não precisa de return 
 
 lista = [
     {'nome': 'Luiz', 'sobrenome': 'miranda'},
