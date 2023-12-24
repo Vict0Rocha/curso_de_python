@@ -20,6 +20,9 @@ novo_produtos = [{**produto, 'valor': produto['valor'] * 1.05}
                  if produto['valor'] > 20 else {**produto}
                  for produto in produtos
 ]
+# O trecho de **produto é uma copia rasa do produto, logo em seguida
+# É acessado a chave valor do meu dict e é feito a alteração caso a condição seja veradeira.
+
 
 # Desempacotando e separando por quebra de linha
 print(*novo_produtos, sep='\n')
