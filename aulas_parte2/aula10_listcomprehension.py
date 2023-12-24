@@ -13,3 +13,7 @@ lista = [numero * 2 for numero in range(10)]
 # multiplicado por 2.
 
 print(lista) 
+
+quadrados_pares = [x**2 for x in range(10) if x % 2 == 0]
+
+print(quadrados_pares)
