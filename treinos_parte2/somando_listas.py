@@ -1,3 +1,5 @@
+from itertools import zip_longest
+
 def soma(l1, l2):
     # if len(l1) <= len(l2):
     #     menor_lista =  len(l1)
@@ -14,3 +16,5 @@ print(soma(lista1, lista2))
 # Aqui faz a mesma coisa 
 soma_lista = [(x + y) for x, y in zip(lista1, lista2)]
 print(soma_lista)
+soma_lista_maior = [x + y for x, y in zip_longest(lista1, lista2, fillvalue=0)]
+print(soma_lista_maior)
