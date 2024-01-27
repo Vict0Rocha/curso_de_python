@@ -26,5 +26,5 @@ print(list(zip(lista1, lista2)))
 
 # O itertools faz o comtrario o zip, pega a lista maior
 from itertools import zip_longest
-
+# fillvalue é para quando um estiver faltando indice, um none, uma lista maior que outra
 print(list(zip_longest(lista1, lista2, fillvalue='SEM CIDADE')))
