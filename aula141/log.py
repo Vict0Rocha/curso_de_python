@@ -1,5 +1,5 @@
 # Abstração
-from pathlib import Path
+from pathlib import Path #Pacote que pega o caminho do meu arquivo
 
 # Pegando o caminho do meu arquivo atual e concatenando um novo nome de arquivo
 LOG_FILE = Path(__file__).parent / "log.txt"
