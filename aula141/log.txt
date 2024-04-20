@@ -1,0 +1,4 @@
+Error: Qualquer coisa (LogFileMixin)
+Seccess: Outra coisa (LogFileMixin)
+Error: Qualquer coisa (LogFileMixin)
+Seccess: Outra coisa (LogFileMixin)

@@ -1,5 +1,8 @@
-from log import Log, LogFileMixin
+from log import LogFileMixin, LogPrintMixin
+from eletronico import Smartphone
 
+iphone = Smartphone('iPhone 14')
+xiaomi = Smartphone('Redmi')
 
-variavel = LogFileMixin()
-variavel.log('Minha mensagem no main')
+iphone.ligar()
+iphone.desligar()
