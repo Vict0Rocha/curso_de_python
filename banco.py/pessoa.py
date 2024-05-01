@@ -6,7 +6,7 @@ idade: int
 class Pessoa: #age =  idade
     def __init__(self, name: str, age: int) -> None:
         self._name = name
-        self.age = age
+        self._age = age
 
     @property
     def name(self):
@@ -16,7 +16,16 @@ class Pessoa: #age =  idade
     def name(self, new_name):
          self._name = new_name
 
+    @property
+    def age(self):
+        return self._age
+
+    @age.setter
+    def age(self, new_age):
+        self._age = new_age
+
 p = Pessoa('Victor', 18)
-print(p.name)
+print(p.name, p.age)
 p.name = 'João'
-print(p.name)
+p.age = 20
+print(p.name, p.age)
