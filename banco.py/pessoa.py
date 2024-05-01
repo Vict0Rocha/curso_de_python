@@ -25,7 +25,3 @@ class Pessoa: #age =  idade
         self._age = new_age
 
 p = Pessoa('Victor', 18)
-print(p.name, p.age)
-p.name = 'João'
-p.age = 20
-print(p.name, p.age)
