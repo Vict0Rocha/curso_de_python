@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 class Conta(ABC): #balance -> Saldo 
-    def __init__(self, agencia, number, balance = 0):
+    def __init__(self, agencia: int, number: int, balance: float = 0) -> None:
         self.agencia = agencia
         self.number = number
         self.balance = balance
@@ -20,7 +20,8 @@ class Conta(ABC): #balance -> Saldo
         print('-')
 
 class ContaCorrente(Conta):
-    def __init__(self, agencia, number, balance: float = 0, limit: float = 0):
+    def __init__(self, agencia: int, number: int, balance: float = 0, 
+                 limit: float = 0):
         super().__init__(agencia, number, balance)
         self.limit = limit
 
@@ -36,6 +37,7 @@ class ContaCorrente(Conta):
 
         print('SAQUE NEGADO - Valor indisponivel para saque.')
         print(f'Seu limite é, {maximum_limit:.2f}')
+        return self.balance
         
 
 class ContaPoupanca(Conta):
@@ -48,6 +50,7 @@ class ContaPoupanca(Conta):
             
         print('SAQUE NEGADO - Valor indisponivel para saque.')
         self.detalhes()
+        return self.balance
 
 if __name__ == '__main__':
     cp1 = ContaPoupanca(111, 222)
