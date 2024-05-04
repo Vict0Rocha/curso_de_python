@@ -38,6 +38,11 @@ class ContaCorrente(Conta):
         print('SAQUE NEGADO - Valor indisponivel para saque.')
         print(f'Seu limite é, {maximum_limit:.2f}')
         return self.balance
+    
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self.agencia!r}, {self.number!r}, {self.balance!r}, {self.limit!r})'
+        return f'{class_name} {attrs}'
         
 
 class ContaPoupanca(Conta):
@@ -51,6 +56,11 @@ class ContaPoupanca(Conta):
         print('SAQUE NEGADO - Valor indisponivel para saque.')
         self.detalhes()
         return self.balance
+    
+    def __repr__(self):
+        class_name = type(self).__name__
+        attrs = f'({self.agencia!r}, {self.number!r}, {self.balance!r})'
+        return f'{class_name} {attrs}'
 
 if __name__ == '__main__':
     cp1 = ContaPoupanca(111, 222)

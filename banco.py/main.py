@@ -35,3 +35,19 @@ Banco será responsável autenticar o cliente e as contas da seguinte maneira:
 Só será possível sacar se passar na autenticação do banco (descrita acima)
 Banco autentica por um método.
 """
+import banco
+import conta
+import pessoa
+
+brasil = banco.Banco()
+victor = pessoa.Cliente('Victor', 19)
+conta1 = conta.ContaCorrente(111, 989, 10, 50)
+conta2 = conta.ContaCorrente(222, 323, 10, 50)
+conta3 = conta.ContaCorrente(333, 123, 10, 50)
+victor.conta = conta2
+brasil.contas.extend([conta1, conta2, conta3])
+brasil.clientes.extend([victor])
+brasil.agencias.extend([111, 222])
+
+if brasil.autenticar(victor, conta1):
+    ...
