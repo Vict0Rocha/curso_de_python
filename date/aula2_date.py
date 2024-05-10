@@ -2,11 +2,21 @@
 # Docs:
 # https://dateutil.readthedocs.io/en/stable/relativedelta.html
 # https://docs.python.org/3/library/datetime.html#timedelta-objects
+'''
+O timedelta é uma diferença entra duas datas
+'''
 
-from datetime import datetime
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
 
 fmt = '%d/%m/%Y %H:%M:%S'
-data_fim = datetime.strptime('12/12/2022 08:20:20', fmt)
+#Passando  e formatando uma data
+data_fim = datetime.strptime('12/12/2022 08:20:20', fmt) 
 data_inicio = datetime.strptime('20/04/1987 09:30:30', fmt)
-
-print(data_fim - data_inicio)
+# delta = timedelta(days=10, hours=2)
+delta =  relativedelta(data_fim, data_inicio)
+# print(data_fim+delta)
+print(delta.days)
+# print(delta.total_seconds())
+print(delta.years)
+print(data_fim + relativedelta(seconds=59, minutes=10))

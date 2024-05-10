@@ -24,4 +24,4 @@ from pytz import timezone
 data = datetime.now()
 
 print(data.timestamp()) # Pegando meu timezone 
-print(datetime.fromtimestamp(1714930437.986032)) # Exibindo meu timezone em data.
+print(datetime.fromtimestamp(1714930437.986032)) # Exibindo meu timezone em data.  
