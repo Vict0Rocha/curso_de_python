@@ -19,5 +19,5 @@ from dotenv import load_dotenv
 # Carrega as variaveis de ambiente
 load_dotenv()
 # Mostra todas as viriaveis de ambiente encontrada no S.O.
-# print(os.environ)
+# print(os.environ) 
 print(os.getenv('BD_PASSWORD'))
