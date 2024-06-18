@@ -39,17 +39,21 @@ layout.addWidget(botao1, 2, 1)
 layout.addWidget(botao2, 2, 2)
 layout.addWidget(botao3, 3, 1, 1, 2)
 
+@Slot()
 def slot_exemple(status_bar):
     status_bar.showMessage('Nova msg na barra de status')
 
+@Slot()
 def outro_slot(checked):
     print('Está marcado', checked)
 
+@Slot()
 def terceiro_slot(action):
     def inner():
         outro_slot(action.isChecked())
     return inner
 
+@Slot()
 def saudacao():
     print('Hello, World!')
 
